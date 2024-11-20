@@ -91,6 +91,7 @@ class ElentaTests(unittest.TestCase):
         expected_text = 'Jūs sėkmingai prisiregistravote!'
 
         self.assertEqual(actual_text, expected_text)
+        self.
 
         print("5. tikiuosi, kad leis sukurti")
 
