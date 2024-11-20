@@ -105,9 +105,8 @@ class ElentaTests(unittest.TestCase):
 
         actual_text = self.driver.find_element(By.XPATH, '/html/body/div[1]/div[2]/h1/b').text
         expected_text = 'Netinkamas vartotojo vardas.'
-# github
-        # github
-        # github
+
+
         self.assertNotEqual(actual_text, expected_text)
 
         print("6. tikiuosi, kad NEleis sukurti")
