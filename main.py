@@ -19,10 +19,10 @@ driver.find_element(By.XPATH, '/html/body/div[2]/div[1]/div[2]/div/div/div/div/d
 # driver.find_element(By.ID, 'CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll').click()
 
 # slapukai bandymas
-driver.find_element(By.XPATH, '//*[@id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"]')
+time.sleep(5)
+driver.find_element(By.XPATH, '//*[@id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"]').click()
 # driver.find_element(By.ID, 'c-button--blue-inversed').click()
 # driver.find_element(By.ID, 'searchKeyword').send_keys(prekyte)
 # # driver.find_element(By.CLASS_NAME, 'fa-search').click()
 # driver.find_element(By.XPATH, "/html/body/div[3]/div/div[1]/form/div[2]/div[1]/button/i").click()
 #
-# time.sleep(1)

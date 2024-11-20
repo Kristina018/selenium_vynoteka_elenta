@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
-from bandymai import random_raide, random_string
+from bandymai import random_letter, random_string
 
 
 class ElentaTests(unittest.TestCase):
@@ -81,7 +81,7 @@ class ElentaTests(unittest.TestCase):
     def test_5_reg_form_20_letters_username(self):
         self.driver.get("https://elenta.lt/registracija")
         self.driver.find_element(By.ID, 'UserName').send_keys(
-            f"{random_raide(18)}{random.randint(10, 99)}")
+            f"{random_letter(18)}{random.randint(10, 99)}")
         self.driver.find_element(By.ID, 'Email').send_keys(f'ne@tavo{random.randint(1000, 9999)}.lt')
         self.driver.find_element(By.ID, 'Password').send_keys('Aasrgt1!')
         self.driver.find_element(By.ID, 'Password2').send_keys('Aasrgt1!')
@@ -105,9 +105,8 @@ class ElentaTests(unittest.TestCase):
 
         actual_text = self.driver.find_element(By.XPATH, '/html/body/div[1]/div[2]/h1/b').text
         expected_text = 'Netinkamas vartotojo vardas.'
-# github
-        # github
-        # github
+
+
         self.assertNotEqual(actual_text, expected_text)
 
         print("6. tikiuosi, kad NEleis sukurti")
